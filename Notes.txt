@@ -1,0 +1,71 @@
+Spring Boot 3 is the latest major version of the Spring Boot framework, released alongside Spring Framework 6. It brings numerous new features and updates, including support for new technologies, improvements in performance, and enhanced developer experience. Some of the key features of Spring Boot 3 are:
+
+### 1. **Java 17+ Support (LTS)**
+   - **Java 17** is the minimum required version for Spring Boot 3, and it’s a long-term support (LTS) version. This means improved performance, stability, and new features that are only available on newer versions of Java.
+   - Spring Boot 3 leverages Java 17 features like `Sealed Classes`, `Pattern Matching`, and enhanced garbage collection.
+
+### 2. **Spring Framework 6 Integration**
+   - Spring Boot 3 is tightly integrated with **Spring Framework 6**, which introduces several new features:
+     - **Jakarta EE 9+ Migration**: The transition from `javax.*` to `jakarta.*` namespaces is fully supported in Spring Boot 3. This was a major change that required updates in both Spring Framework 6 and Spring Boot 3.
+     - New programming model for **reactive** and **imperative** applications, improved support for **native image generation** (via GraalVM).
+     - Full support for **JDK 17+** features like sealed classes, pattern matching, etc.
+
+### 3. **Improved Native Image Support (GraalVM)**
+   - Native image support with **GraalVM** is enhanced in Spring Boot 3. This allows for faster startup times and reduced memory usage when building native images, which is ideal for cloud-native applications and microservices.
+   - The native build system in Spring Boot 3 is now more seamless and optimized for GraalVM.
+
+### 4. **Observability and Metrics**
+   - **Micrometer** (the metrics library) continues to be a key part of Spring Boot, with new features to improve observability.
+   - **OpenTelemetry** integration provides enhanced observability support for distributed tracing, logs, and metrics.
+   - **Actuator** endpoints are better integrated for improved application monitoring.
+
+### 5. **Kotlin Support**
+   - Kotlin remains a first-class citizen in Spring Boot 3, with enhanced support for **Kotlin Coroutines** and **Kotlin DSL** for configuring Spring beans and components.
+   - Spring Boot 3 offers better Kotlin-based support for both web and non-web applications.
+
+### 6. **Security Improvements**
+   - **Spring Security 6** integration: Spring Boot 3 works with Spring Security 6, which provides several improvements in terms of authentication and authorization mechanisms, including stronger support for OAuth 2.0 and OpenID Connect.
+   - Improved security default settings, along with better integration with JWT, OAuth 2.0, and SSO.
+
+### 7. **Configuration Properties Binding**
+   - Spring Boot 3 includes improvements to the **configuration properties binding** mechanism. This makes it easier to map external configuration sources (like application.properties or YAML files) to strongly typed Java objects.
+   - Better support for type-safe configuration and advanced validation mechanisms.
+
+### 8. **Improved Dependency Injection**
+   - Spring Boot 3 uses the new **Spring Framework 6** dependency injection (DI) model, offering improvements in performance and flexibility.
+   - **JEP 405** (JEPs for Java) offers more DI improvements.
+
+### 9. **Spring Data Improvements**
+   - The Spring Boot 3 version brings updates to **Spring Data** to handle databases more effectively, including enhanced support for **JDBC**, **JPA**, **NoSQL** databases, and **R2DBC** (reactive database connectivity).
+   - Better support for database migrations and schema management with tools like **Flyway** and **Liquibase**.
+
+### 10. **Spring Web Improvements**
+   - **Spring Web** continues to evolve, with enhanced support for **WebFlux** (reactive web framework) and improvements in the **REST** handling model, such as better support for handling **JSON** and **XML** content.
+   - Improved **CORS** configuration, better **WebSocket** support, and native build optimizations.
+
+### 11. **New Version of Spring Boot CLI**
+   - The Spring Boot CLI (Command-Line Interface) has been updated for Spring Boot 3, allowing developers to quickly run and test Spring Boot applications from the command line with enhanced support for **GraalVM** and other runtime improvements.
+
+### 12. **Enhanced DevTools and Developer Experience**
+   - **DevTools** now includes better integration with IDEs and faster application restart times, streamlining the development experience for quicker iterations.
+   - Automatic hot swapping of code changes to improve productivity during development.
+
+### 13. **Improved Test Support**
+   - Spring Boot 3 provides updates to testing annotations, test configurations, and test utilities for easier unit and integration testing.
+   - The `@SpringBootTest` annotation is more flexible and optimized for both traditional and reactive applications.
+
+### 14. **New Logging Support**
+   - Support for **SLF4J**, **Logback**, **Log4j2**, and **JUL** (Java Util Logging) remains strong in Spring Boot 3, but with better defaults and more extensibility options.
+   - Enhanced integration with modern log management tools and observability services.
+
+### 15. **Minimal Web Application Support**
+   - Spring Boot 3 embraces the trend of **minimal web applications** using the **Spring Boot `WebApplication`** model with reduced configuration, making it simpler to build lightweight, cloud-native apps.
+   - **Spring WebFlux** and **Spring MVC** applications can now have a more compact setup, particularly suitable for serverless deployments.
+
+### 16. **Deprecations and Clean-Up**
+   - Several deprecated features and APIs from previous versions have been removed, as Spring Boot 3 is designed for modern development paradigms.
+   - Major features such as **Spring AOT (Ahead of Time Compilation)** have been enhanced to enable efficient, compile-time optimizations.
+
+---
+
+Spring Boot 3 aligns with the latest trends in cloud-native development, microservices, reactive programming, and better integration with modern observability tools. It’s ideal for teams looking to stay on top of the latest Java technologies and improve both developer productivity and application performance.
